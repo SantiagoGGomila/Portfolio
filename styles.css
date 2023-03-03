@@ -1,0 +1,373 @@
+/*Importar fuente de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Roboto+Condensed&display=swap');
+
+
+*{
+    
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black
+}
+li{
+    list-style: none;
+}
+
+
+.header #navbar{
+    background-color: #5fadf1 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 85px;
+    padding: 5px 0%;
+    font-family: 'Nunito', sans-serif;
+    z-index: 1;
+}
+.header #navbar li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header #navbar a{
+    font-size: 700;
+    color: white;
+ 
+}
+
+.header .logo{
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+}
+
+
+
+.header  img{
+    height: 100px;
+    width: 100px;
+    transition: all 0.3;
+}
+
+.header .logo img:hover{
+    transform: scale(1.1);
+}
+
+.izquierda{
+    top: 20%;
+    height: 100vh;
+    width: 50%
+}
+.derecha{
+    background-size: cover;
+    background-position: center; 
+    width: 50%;
+    height: 100vh;
+}
+
+#pantalla-dividida{
+    display: flex ;
+}
+
+.izquierda h1{
+    font-size: 150px;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.derecha img{
+    position: absolute;
+    top: 7%;
+    width: 650px;
+}
+.izquierda h2{
+    font-size: 60px;
+    margin-top: 0%;
+    margin-left: 40%;
+    text-align: center;
+    top: 10%
+}
+
+.santiago{
+    color:#5fadf1;
+    font-size: 60px;
+}
+.world{
+    color: #5fadf1;
+    font-size: 150px;
+}
+
+
+.info-izquierda{
+    background-color: #5fadf1;
+    width: 500px;
+    height: 400px;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+}
+
+.info-derecha{
+        background-color: white;
+        background-size: cover;
+        background-position: center; 
+        width: 500px;
+        height: 400px;
+        margin-left: auto;
+        box-shadow: 0px 0px 25px #5fadf1;
+        backdrop-filter: blur(10px);
+        
+}
+#About-me{
+    display: flex ;
+    position: relative;
+    top: 60%;
+    bottom: 60%;
+}
+.info-izquierda{
+    width: 600px;
+    height: 600px;
+}
+.info-derecha{
+    width: 600px;
+    height: 600px;
+}
+.info-izquierda h1{
+    font-size: 70px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+    border-radius: 5%;
+}
+
+.info-izquierda img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    left: 36%;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+}
+
+.info-izquierda p{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.info-derecha h1{
+    font-size: 70px;
+    text-align: center;
+    color:#5fadf1;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+    border-radius: 5% ;
+}
+
+.info-derecha li{
+    text-align: center;
+    font-size: 40px;
+}
+
+.info-derecha img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+    left: 36%;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+}
+
+#Projects{
+    background-color: #5fadf1;
+    text-align: center;
+    font-size: 500px;
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+}
+.project-1{
+    position: relative;
+    display: flex;
+    text-align: center;
+}
+.project-1 img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+#profile-link{
+    background-color: #5fadf1;
+    margin-top: 10px;
+    
+    
+    border-radius: 1%;
+    
+}
+#profile-link h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+
+.contact-git img{
+    width: 30px;
+}
+.contact-git:hover{
+    transform: scale(1.1)
+}
+.contact-git a{
+    font-size: 20px;
+    color: white;
+}
+
+.contact-gmail img{
+    width: 30px;
+    top: 1%
+
+}
+.contact-gmail:hover{
+    transform: scale(1.1)
+}
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.contact-git{
+    display: flex;
+    position: relative;
+    left: 45%;
+}
+.contact-gmail{
+    display: flex;
+    position: relative;
+    right: 260%;
+    
+    
+}
+.contact-gmail a{
+    color: white;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 375px) {
+    /* Reglas de estilo para dispositivos con un ancho máximo de 375px */
+    
+    .header #navbar li {
+      display: block;
+      padding: 5px;
+      text-align: center;
+    }
+    
+    .header .logo {
+      height: 50px;
+      width: 50px;
+    }
+    
+    .izquierda {
+      height: auto;
+      width: 100%;
+    }
+    
+    .derecha {
+      width: 100%;
+      height: auto;
+    }
+    
+    .derecha img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .izquierda h1 {
+       position: relative;
+       top: 13%;
+      font-size: 80px;
+      margin-top: 10%;
+    }
+    .world{
+        font-size: 70px;
+        color: #5fadf1;
+    }
+    
+    .izquierda h2 {
+      font-size: 40px;
+      margin-left: 10%;
+      top: 0%;
+    }
+    
+    .info-izquierda, .info-derecha {
+      width: 90%;
+      height: auto;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+    
+    .info-izquierda h1 {
+      font-size: 50px;
+    }
+    
+    .info-izquierda img {
+      width: 100px;
+      height: 100px;
+      left: 30%;
+    }
+    
+    .info-izquierda p {
+      font-size: 30px;
+    }
+    
+    .info-derecha h1 {
+      font-size: 50px;
+    }
+    
+    .info-derecha li {
+      font-size: 30px;
+    }
+    
+    .info-derecha img {
+      width: 100px;
+      height: 100px;
+      left: 30%;
+    }
+    
+    #Projects h1 {
+      font-size: 200px;
+    }
+    
+    .project-1 img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    #profile-link h1 {
+      font-size: 30px;
+    }
+    
+    .contact-git img, .contact-gmail img {
+      width: 20px;
+    }
+    
+    .contact-git a, .contact-gmail a {
+      font-size: 16px;
+    }
+  }
